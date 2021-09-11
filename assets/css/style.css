@@ -6,7 +6,7 @@
 
 /* Header for Dashboard */
 .header {
-    background-image: linear-gradient(to right, blue , darkblue);
+    background-image: linear-gradient(to right, #3462BB , #20084B);
     color: white;
     font-size: 32px;
     text-align: center;
@@ -15,13 +15,17 @@
     font-weight: bolder;
 }
 
+.main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
 /* City Search Container */
 .city-search {
     margin-left: 10px;
-    display: grid;
-    width: 20%;
-    border-bottom: 2px solid black;
     margin-top: 10px;
+    border-bottom: 2px solid black;
+    grid-column: 1;
 }
 
 .city-search h2 {
@@ -41,7 +45,7 @@
 #search-button {
     margin-top: 15px;
     margin-bottom: 20px;
-    background-color: blue;
+    background-color: #5098E6;
     color: white;
     width: 100%;
     border-radius: 5px;
@@ -52,3 +56,8 @@
     opacity: 60%;
 }
 
+.searched-weather {
+    grid-column: 2;
+    border: 1px solid black;
+    margin: 20px;
+}

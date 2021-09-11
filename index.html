@@ -13,8 +13,7 @@
     <h1 class="header">
         Weather Dashboard
     </h1>
-    <!-- Left Side Container -->
-    <container class="left-side">
+    <container class="main">
         <!-- City Search Container -->
         <container class="city-search">
             <h2>Search for a City:</h2>
@@ -24,8 +23,16 @@
             </div>
             <button id='search-button'>Search</button>
         </container>
-        <!-- Container for saved cities -->
-        <container class="saved-cities"></container>
+        <!--searched weather city-->
+        <container class="searched-weather">
+            <div class="row">
+                <div id="cityName"></div>
+                <div id="currentTemp"></div>
+                <div id="humidity"></div>
+                <div id="windSpeed"></div>
+                <div id="UVIndex"></div>
+            </div>
+        </container>
     </container>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
