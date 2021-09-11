@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+
+/* Header for Dashboard */
+.header {
+    background-image: linear-gradient(to right, blue , darkblue);
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+/* City Search Container */
+.city-search {
+    margin-left: 10px;
+    display: grid;
+    width: 20%;
+    border-bottom: 2px solid black;
+    margin-top: 10px;
+}
+
+.city-search h2 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.form-control {
+    margin-top: 15px;
+    border: 1px solid black;
+    height: 45px;
+}
+
+/* search button */
+#search-button {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+}
+
+#search-button:hover {
+    opacity: 60%;
+}
+
