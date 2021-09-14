@@ -197,7 +197,7 @@ $("document").ready(function(){
         for (var i = 4; i < resultsTwo.list.length; i+=8) {
             var date = resultsTwo.list[i].dt;
             var dayDate = moment.unix(date).format("M/DD/YYYY");
-            var dayTemps = "Temp: " + resultsTwo.list[i].main.temp + " F";
+            var dayTemps = "Temp: " + resultsTwo.list[i].main.temp + " &#176;F";
             var dayWind = "Wind: " + resultsTwo.list[i].wind.speed + " MPH";
             var dayHumidity = "Humidity: " + resultsTwo.list[i].main.humidity + "%";
             var dayIcon = resultsTwo.list[i].weather[0].icon;

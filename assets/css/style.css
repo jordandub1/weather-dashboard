@@ -9,6 +9,12 @@ nav {
     width: 100%;
     font-family: 'Comfortaa', cursive;
 }
+
+/*body font style*/
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
 /*side navigation properties*/
 .sidenav {
     background-color: rgb(240, 240, 240);
@@ -18,7 +24,6 @@ nav {
     left: 0;
     width: 225px;
     margin-top: 66px;
-    font-family: 'Noto Sans SC', sans-serif;
 }
 
 /*header 2*/
@@ -79,13 +84,12 @@ h2 {
     height: 200px;
     margin: 5px;
     color: white;
-    font-weight: bold
 }
 
 /*city name properties*/
 #cityName {
     font-size: larger;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 5px;
 }
 
