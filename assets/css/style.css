@@ -1,63 +1,102 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    }
-
-/* Header for Dashboard */
-.header {
+/*top title area*/
+nav {
     background-image: linear-gradient(to right, #3462BB , #20084B);
     color: white;
-    font-size: 32px;
+    margin-top: 0;
     text-align: center;
-    margin: 0px;
-    padding: 20px;
-    font-weight: bolder;
-}
-
-.main {
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-/* City Search Container */
-.city-search {
-    margin-left: 10px;
-    margin-top: 10px;
-    border-bottom: 2px solid black;
-    grid-column: 1;
-}
-
-.city-search h2 {
-    margin: 0;
-    margin-top: 10px;
-    font-size: 28px;
-    font-weight: bolder;
-}
-
-.form-control {
-    margin-top: 15px;
-    border: 1px solid black;
-    height: 45px;
-}
-
-/* search button */
-#search-button {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #5098E6;
-    color: white;
+    padding: 5px;
+    position: fixed;
     width: 100%;
-    border-radius: 5px;
-    height: 40px;
+    font-family: 'Comfortaa', cursive;
+}
+/*side navigation properties*/
+.sidenav {
+    background-color: rgb(240, 240, 240);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    margin-top: 66px;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
-#search-button:hover {
-    opacity: 60%;
+/*header 2*/
+h2 {
+    padding-top: 10px;
+    font-size: larger;
+    text-align: center;
 }
 
-.searched-weather {
-    grid-column: 2;
-    border: 1px solid black;
-    margin: 20px;
+/*input properties*/
+#city {
+    margin-left: 10px;
+}
+
+#recentSearches li:hover {
+    background-color: #3A56B3;
+    opacity: 70%;
+    color: white;
+}
+
+/*button properties*/
+#cityBtn {
+    margin-right: 10px;
+    background-color: #3A56B3;
+}
+
+#cityBtn:hover {
+    opacity: 75%;
+}
+
+/*recent searches properties*/
+#recent {
+    width: 12.75rem;
+    margin-left: 10px;
+}
+
+/*top forecast*/
+#cityInfo {
+    margin-top: 100px;
+    margin-left: 255px;
+    margin-right: 55px;
+    padding: 20px;
+
+}
+
+/*5-day forecast container*/
+#forecast {
+    margin-top: 50px;
+    margin-left: 255px;
+    margin-right: 50px;
+
+}
+
+/*weather card properties*/
+#weather-4, #weather-12, #weather-20, #weather-28, #weather-36 {
+    padding-top: 15px;
+    width: 180px;
+    height: 200px;
+    margin: 5px;
+    color: white;
+    font-weight: bold
+}
+
+/*city name properties*/
+#cityName {
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/*added margin for spacing between text*/
+#currentTemp, #humidity, #windSpeed, #UVIndex {
+    margin-bottom: 20px;
+} 
+
+/*h7 properties*/
+#h7 {
+    padding-bottom: 15px;
+    font-size: x-large;
+    font-weight: bold;
 }
