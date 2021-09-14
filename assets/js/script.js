@@ -16,6 +16,7 @@ $("document").ready(function(){
     var lat;
     var lon;
     var dayTemps;
+    var dayWind;
     var dayHumidity;
     var dayIcon;
     var dayImageUrl;
@@ -70,30 +71,35 @@ $("document").ready(function(){
         $("#dayIconImage-4").html("");
         $("#dayTemps-4").html("");
         $("#dayHumidity-4").html("");
+        $("#dayWind-4").html("");
         $("weather-4").html("");
 
         $("#dayDate-12").html("");
         $("#dayIconImage-12").html("");
         $("#dayTemps-12").html("");
-        $("#dayHumidity-12").html("")
+        $("#dayHumidity-12").html("");
+        $("#dayWind-12").html("");
         $("weather-12").html("");
 
         $("#dayDate-20").html("");
         $("#dayIconImage-20").html("");
         $("#dayTemps-20").html("");
         $("#dayHumidity-20").html("");
+        $("#dayWind-20").html("");
         $("weather-20").html("");
 
         $("#dayDate-28").html("");
         $("#dayIconImage-28").html("");
         $("#dayTemps-28").html("");
         $("#dayHumidity-28").html("");
+        $("#dayWind-28").html("");
         $("weather-28").html("");
 
         $("#dayDate-36").html("");
         $("#dayIconImage-36").html("");
         $("#dayTemps-36").html("");
         $("#dayHumidity-36").html("");
+        $("#dayWind-36").html("");
         $("weather-36").html("");
     }
 
@@ -120,7 +126,7 @@ $("document").ready(function(){
         var imageUrl = "http://openweathermap.org/img/w/" + iconW + ".png";
         var iconImage = $("<img>");
         iconImage.attr("src", imageUrl);
-        var currentTemp = results.main.temp + " F";
+        var currentTemp = results.main.temp + " &#176;F";
         var humidity = results.main.humidity;
         var windSpeed = results.wind.speed + " MPH";
         var lat = results.coord.lat;
@@ -145,8 +151,8 @@ $("document").ready(function(){
     
         $("#cityName").append(cityName, iconImage);
         $("#currentTemp").append("Temperature: " + currentTemp);
-        $("#humidity").append("Humidity: " + humidity + "%");
         $("#windSpeed").append("Wind Speed: " + windSpeed);
+        $("#humidity").append("Humidity: " + humidity + "%");
 
             // API URL for UV index
             var UVURL= "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&units=imperial" + "&appid=8391498daeaf403c89574dc9e5a777c7";
@@ -192,6 +198,7 @@ $("document").ready(function(){
             var date = resultsTwo.list[i].dt;
             var dayDate = moment.unix(date).format("M/DD/YYYY");
             var dayTemps = "Temp: " + resultsTwo.list[i].main.temp + " F";
+            var dayWind = "Wind: " + resultsTwo.list[i].wind.speed + " MPH";
             var dayHumidity = "Humidity: " + resultsTwo.list[i].main.humidity + "%";
             var dayIcon = resultsTwo.list[i].weather[0].icon;
             var dayImageUrl = "http://openweathermap.org/img/w/" + dayIcon + ".png";
@@ -205,8 +212,8 @@ $("document").ready(function(){
             $("#dayDate-" + i).append(dayDate);
             $("#dayIconImage-" + i).append(dayIconImage);
             $("#dayTemps-" + i).append(dayTemps);
+            $("#dayWind-" + i).append(dayWind);
             $("#dayHumidity-" + i).append(dayHumidity);
-            
             $("#weather-" + i).css("background-color", "#5b7c99");
             
         }

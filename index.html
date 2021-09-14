@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="weather icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -16,7 +17,7 @@
     <title>Weather Dashboard</title>
   </head>
 <body>
-  <!--side navigation bar -->
+  <!--side navigation bar-->
   <div class="sidenav">
     <!--header-->
     <h2>Search for a City:</h2>
@@ -28,14 +29,14 @@
         <button id=cityBtn class="btn btn-primary" type="button">Search</button>
       </div>
     </div>
-    <!--recent searches displayed here-->
+    <!--recent searches-->
     <div id="recent" class="card">
       <ul id="recentSearches" class="list-group list-group-flush">
       </ul>
     </div>
   </div>
   <nav>
-    <!--header goes here-->
+    <!--header-->
     <h1>Weather Dashboard</h1>
   </nav>
   <div class="row">
@@ -52,44 +53,48 @@
   <div class="row">
     <!--5-day forecast-->
     <div id="forecast" class="container">
-      <!-- <div class="wrapper"> -->
         <div class="row">
           <h7 id="h7"></h7>
         </div>  
           <div class="row">
-            <!--weather card-->
+            <!--weather card 1-->
             <div id="weather-4" class="container rounded">
               <div id="dayDate-4"></div>
               <div id="dayIconImage-4"></div>
               <div id="dayTemps-4"></div>
+              <div id="dayWind-4"></div>
               <div id="dayHumidity-4"></div>
             </div>
-            <!--weather card-->
+            <!--weather card 2-->
             <div id="weather-12" class="container rounded">
               <div id="dayDate-12"></div>
               <div id="dayIconImage-12"></div>
               <div id="dayTemps-12"></div>
+              <div id="dayWind-12"></div>
               <div id="dayHumidity-12"></div>
             </div>
-            <!--weather card-->
+            <!--weather card 3-->
             <div id="weather-20" class="container rounded">
               <div id="dayDate-20"></div>
               <div id="dayIconImage-20"></div>
               <div id="dayTemps-20"></div>
+              <div id="dayWind-20"></div>
               <div id="dayHumidity-20"></div>
             </div>
-            <!--weather card-->
+            <!--weather card 4-->
             <div id="weather-28" class="container rounded">
               <div id="dayDate-28"></div>
               <div id="dayIconImage-28"></div>
               <div id="dayTemps-28"></div>
+              <div id="dayWind-28"></div>
               <div id="dayHumidity-28"></div>
             </div>
-            <!--weather card-->
+            <!--weather card 5-->
             <div id="weather-36" class="container rounded">
               <div id="dayDate-36"></div>
               <div id="dayIconImage-36"></div>
               <div id="dayTemps-36"></div>
+              <div id="dayWind-36"></div>
               <div id="dayHumidity-36"></div>
             </div>
           </div>  
